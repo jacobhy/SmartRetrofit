@@ -13,8 +13,16 @@ android {
     }
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 是否打印请求日志
+            buildConfigField("boolean", "IS_PRINT_REQUEST_LOG", "false")
+        }
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 是否打印请求日志
+            buildConfigField("boolean", "IS_PRINT_REQUEST_LOG", "true")
         }
     }
 }

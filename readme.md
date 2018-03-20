@@ -1,19 +1,15 @@
-package com.jacob.www.smartretrofit.demo;
+# SmartRetrofit #
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+## 可能是最灵活的retrofit + okhttp + gson +rxjava： ##
+1. url动态传入
+2. 参数动态传入
+3. 头部参数动态传入
+4. 接口响应返回：页面实例在堆栈中才回调相关操作
+5. 线程池复用
 
-import com.jacob.www.smartretrofit.http.RetrofitCallback;
-import com.jacob.www.smartretrofit.http.SmartRetrofit;
+## 如何使用： ##
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class HttpDemoActivity extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // post方法示例一：链式调用
+	// post方法示例一：链式调用
         Map<String, String> params = new HashMap<>();
         params.put("key", "value");
         new SmartRetrofit.Builder()
@@ -47,6 +43,7 @@ public class HttpDemoActivity extends AppCompatActivity {
 
                     }
                 });
+
         // post方法示例二：统一传参调用
         Map<String, String> headers = new HashMap<>();
         headers.put("key", "value");
@@ -82,5 +79,8 @@ public class HttpDemoActivity extends AppCompatActivity {
 
                     }
                 });
-    }
-}
+
+
+
+
+

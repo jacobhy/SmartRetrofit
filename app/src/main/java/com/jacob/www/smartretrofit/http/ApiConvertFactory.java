@@ -8,18 +8,18 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 
 /**
- * @className: JkApiConvertFactory
+ * @className: ApiConvertFactory
  * @classDescription: this converter decode the response.
  * @author: jacobHy
  * @createTime: 2016/8/30
  */
-public class JkApiConvertFactory extends Converter.Factory {
+public class ApiConvertFactory extends Converter.Factory {
 
-    public static JkApiConvertFactory create() {
-        return new JkApiConvertFactory();
+    public static ApiConvertFactory create() {
+        return new ApiConvertFactory();
     }
 
-    private JkApiConvertFactory() {
+    private ApiConvertFactory() {
     }
 
     @Override

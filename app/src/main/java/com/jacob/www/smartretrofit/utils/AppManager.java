@@ -21,7 +21,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -33,7 +32,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -52,7 +50,6 @@ public class AppManager {
      *
      * @param activity 页面实例
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -70,7 +67,6 @@ public class AppManager {
      *
      * @param activity 页面实例
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -85,7 +81,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -108,7 +103,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -128,7 +122,6 @@ public class AppManager {
      *
      * @param activity 页面实例
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -150,7 +143,6 @@ public class AppManager {
      *
      * @param activityCls 页面类名
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -168,17 +160,16 @@ public class AppManager {
     /**
      * activity栈中是否存在该activity
      *
-     * @param clsStr 页面类名
+     * @param
      * @return
-     * @author jacobHy
-     * @createTime 2016/10/14
-     * @lastModify 2016/10/14
+     * @createTime 2018/3/20
+     * @lastModify 2018/3/20
      */
     public boolean hasActivity(String clsStr) {
         try {
             Class<?> cls = Class.forName(clsStr);
             return hasActivity(cls);
-        }catch (Exception e) {
+        } catch (Exception e) {
             return false;
         }
     }
@@ -188,7 +179,6 @@ public class AppManager {
      *
      * @param activityCls
      * @return
-     * @author jacobHy
      * @createTime 2017/6/19
      * @lastModify 2017/6/19
      */
@@ -209,7 +199,6 @@ public class AppManager {
      *
      * @param activityCls
      * @return
-     * @author jacobHy
      * @createTime 2017/6/19
      * @lastModify 2017/6/19
      */
@@ -231,7 +220,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -247,7 +235,6 @@ public class AppManager {
      *
      * @param cls 页面类名
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -270,7 +257,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2017/6/23
      * @lastModify 2017/6/23
      */
@@ -290,7 +276,6 @@ public class AppManager {
      *
      * @param cls 页面类名
      * @return
-     * @author jacobHy
      * @createTime 2017/5/27
      * @lastModify 2017/5/27
      */
@@ -314,7 +299,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -338,7 +322,6 @@ public class AppManager {
      *
      * @param
      * @return counts Activity的个数
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -358,7 +341,6 @@ public class AppManager {
      *
      * @param
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -376,7 +358,6 @@ public class AppManager {
      *
      * @param activity 页面实例
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
@@ -394,7 +375,6 @@ public class AppManager {
      *
      * @param cls 页面类名
      * @return
-     * @author jacobHy
      * @createTime 2016/10/14
      * @lastModify 2016/10/14
      */
